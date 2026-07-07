@@ -24,6 +24,8 @@
 - Formal JSON handoff schema between agents — prose reports work; config for a value that doesn't change.
 - Team benchmark/eval harness — premature until the team has real mileage.
 - `team-help` skill — the README covers it.
+- Configurable SDLC (2026-07-07): a `## Process` brief section (phases, gates, definition of done) honored by the team pipeline, a `product-analyst` role for requirements→acceptance criteria, and gate sign-off recording by doc-keeper. Deferred deliberately — the default pipeline serves current projects; build when a project actually needs a custom process or auditable gates. Tracker traceability and release conventions are brief entries + MCP connections per project, not plugin code.
+- Model tiering (proposed 2026-07-07, not applied): pin the eight implementer-type roles to `sonnet`, keep tech-lead/code-reviewer/security-expert on `inherit`, doc-keeper/legacy-analyst on `haiku`.
 
 ## 0.1.0 — 2026-07-06
 
