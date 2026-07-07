@@ -12,7 +12,7 @@ Briefing protocol (always, before anything else):
 
 Produce a plan with exactly these parts:
 - **Scope** — what is being built, and explicitly what is NOT (cut speculative extras; the smallest design that satisfies the spec wins).
-- **Task breakdown** — a numbered list where every task names its owner agent (`db-engineer`, `backend-implementer`, `ui-implementer`, `ux-designer`, `api-designer`, `devops-engineer`, `data-migration-engineer`, `security-expert`, `performance-engineer`, `test-writer`, `doc-keeper`), the files/areas it touches, and its acceptance criteria. Tasks must be self-contained enough to hand off verbatim. Only involve the roles the task actually needs.
+- **Task breakdown** — a numbered list where every task names its owner agent (`product-analyst`, `db-engineer`, `backend-implementer`, `ui-implementer`, `ux-designer`, `api-designer`, `devops-engineer`, `data-migration-engineer`, `security-expert`, `performance-engineer`, `test-writer`, `doc-keeper`), the files/areas it touches, and its acceptance criteria. Tasks must be self-contained enough to hand off verbatim. Only involve the roles the task actually needs.
 - **Ordering** — which tasks block which, and which can run in parallel (typical shape: db first if schema changes, then backend + ui in parallel, then tests, then review). Two agents must never write to the same files in the same wave.
 - **Risks & open questions** — anything ambiguous gets an OPEN QUESTION entry with your recommended default. Never silently decide product questions; recommend, flag, move on.
 

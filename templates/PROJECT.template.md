@@ -91,6 +91,13 @@ Last updated: {{DATE}}
      Files that must stay in sync with code: decision log (numbering scheme),
      open-questions ledger, architecture docs, backlog. "None" is a valid answer. -->
 
+## Tracker
+<!-- Read by: product-analyst and the team-intake skill.
+     Work tracker (Jira / GitHub Issues / Linear / none), project key, issue
+     types to use, story description format, labels/components, connection
+     method (MCP server name, or REST base URL + credential env var name),
+     and posting policy (who approves before stories are created). -->
+
 ## Legacy
 <!-- Read by: legacy-analyst, data-migration-engineer. Delete or leave empty if
      greenfield. Legacy sources (old DDL dump, legacy repo path), coverage/

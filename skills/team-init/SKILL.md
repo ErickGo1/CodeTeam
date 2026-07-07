@@ -30,6 +30,7 @@ Use AskUserQuestion for what scanning cannot reveal (typically 3–6 questions, 
 - Database: migration policy (edit canonical schema vs numbered migrations) and whether a schema freeze applies.
 - Review: project-specific blockers beyond the universal checklist, and the base branch.
 - Anything the scan found ambiguous (two test frameworks, two component libraries...).
+- Tracker, only if the team uses one: system + project key, issue types, connection method (MCP server or REST + credential env var), and who approves before stories are posted.
 - Working language, only if the conversation or repo suggests a non-English team (e.g. the user writes in Spanish): which language for reports/specs/discussion vs code/identifiers/commits. Record the answer in Conventions.
 
 Skip questions whose answers were found in Step 1. For a greenfield/small project accept "defaults are fine" and write sensible defaults.

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 — 2026-07-07
+
+- `product-analyst` role (15th): client requirements documents → numbered business rules (BR-x), user stories with test-derivable acceptance criteria, BR↔story traceability table, open questions for the client, explicit out-of-scope. Built now because a real client workflow needs it (was deferred in 0.2.0).
+- `/dev-team:team-intake <doc>` skill: extract (pdf/docx/md) → product-analyst → mandatory user approval gate → post stories to the tracker (connected MCP first, REST fallback, import-ready artifact when neither) → doc-keeper records rules and client questions.
+- Brief gains a `## Tracker` section (system, project key, issue types, connection method, posting policy); team-init asks about it when relevant.
+- Still deferred from the SDLC set: the `## Process` brief section (configurable phases/gates) and gate sign-off recording.
+
 ## 0.2.0 — 2026-07-06
 
 **Team**

@@ -8,6 +8,7 @@ A portable senior development team of AI agents — tech lead, UX designer, UI &
 
 | Agent | Does | Never does |
 |---|---|---|
+| `product-analyst` | Client requirements docs → numbered rules, stories, open questions | Inventing requirements |
 | `tech-lead` | Plans, decomposes, assigns, makes architecture calls | Writes code (read-only) |
 | `ux-designer` | Flows, screen layouts, component specs | Production code |
 | `ui-implementer` | Frontend, inside the project's design system | Backend, DB, tests |
@@ -39,6 +40,7 @@ Then, in any project:
 3. `/dev-team:team <feature>` — runs the full pipeline: plan → design → implement (parallel) → test → review (with fix loop) → document.
 4. `/dev-team:team-review [base]` — quick parallel code-reviewer + security-expert pass on your current diff, one merged verdict.
 5. `/dev-team:team-standup` — read-only digest: what needs a decision, recent work, `ponytail:` debt, open questions.
+6. `/dev-team:team-intake <doc>` — client requirements document → business rules + stories with acceptance criteria → (after your approval) posted to the tracker the brief names (Jira via MCP/REST, or an import-ready artifact).
 
 A SessionStart hook announces the team in any project that has a brief (and warns when the brief looks stale). Projects without a brief get no noise.
 
@@ -54,6 +56,7 @@ skills/team-init/    onboarding skill: generates .devteam/PROJECT.md
 skills/team/         orchestration skill: the full pipeline
 skills/team-review/  standalone parallel review (code-reviewer + security-expert)
 skills/team-standup/ read-only project status digest
+skills/team-intake/  client requirements doc → stories → tracker
 hooks/               SessionStart hook: announces the brief, warns on staleness
 templates/           PROJECT.template.md — the brief's section contract
 examples/            PROJECT.example-pos.md — a fully filled brief for a fictional POS product
