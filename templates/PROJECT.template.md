@@ -28,7 +28,10 @@ Last updated: {{DATE}}
 
 ## Conventions
 <!-- Identifier language, naming, ID strategy (e.g. UUID v7), money/quantity types
-     and precision, timezone policy, error-handling idiom. -->
+     and precision, timezone policy, error-handling idiom.
+     Working language: what language agents use for reports, plans, specs, and
+     discussion with the user (e.g. "Spanish for reports and discussion; English
+     for code, identifiers, comments, and commit messages"). Omit for English. -->
 
 ## Non-negotiables
 <!-- The "never do" list. Security, compliance, data rules. Every agent enforces
