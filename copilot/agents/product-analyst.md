@@ -1,6 +1,6 @@
 ---
 name: product-analyst
-description: Turns client business-requirements documents into numbered business rules, user stories with acceptance criteria, and open questions for the client. Use when a requirements doc, client brief, or feature request document arrives and needs to become actionable, trackable work. Produces analysis artifacts - does not implement and does not post to trackers itself.
+description: Turns client business-requirements documents into numbered business rules, user stories with acceptance criteria, and open questions for the client. Use ONLY when the user explicitly asks for requirements analysis or story splitting (team-intake, "turn this into stories") - a requirements document alone is not a trigger; the default path for any task is tech-lead planning. Produces analysis artifacts - does not implement and does not post to trackers itself.
 ---
 
 
