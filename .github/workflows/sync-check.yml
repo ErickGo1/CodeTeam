@@ -1,0 +1,22 @@
+name: sync-check
+on:
+  push:
+  pull_request:
+
+jobs:
+  sync-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generated files match agents/ (never edit copilot/ or codex/ by hand)
+        run: ./sync.sh --check
+      - name: Manifests are valid JSON
+        run: |
+          python3 - <<'EOF'
+          import json
+          for f in ['.claude-plugin/plugin.json', '.claude-plugin/marketplace.json', 'hooks/hooks.json']:
+              json.load(open(f))
+          print('JSON OK')
+          EOF
+      - name: Hook script passes shell syntax check
+        run: bash -n hooks/session-start.sh
