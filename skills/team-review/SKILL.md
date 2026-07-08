@@ -9,7 +9,7 @@ Run the team's two gatekeepers on the current changes in parallel and merge thei
 
 ## Steps
 
-1. **Precondition**: `.devteam/PROJECT.md` must exist — if not, tell the user to run `/dev-team:team-init` and stop.
+1. **Precondition**: read `.devteam/PROJECT.md` if it exists. If not, proceed in no-brief mode — the reviewers apply their universal checklists (secrets, injection, authz, data loss, over-engineering) without project-specific blockers; note that in the final report and suggest `/dev-team:team-init` in one line.
 2. **Determine scope**: the base is (in order) the argument passed to this skill, the base branch named in the brief's "Review" section, or the repo's default branch. Run `git diff --stat <base>` (include uncommitted changes) to get the changed-file list. Empty diff → report "nothing to review" and stop.
 3. **Dispatch — both Agent calls in ONE message**:
    - `code-reviewer`: base ref + changed-file list; full checklist per its own definition.

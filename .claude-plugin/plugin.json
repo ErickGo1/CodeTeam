@@ -1,7 +1,7 @@
 {
   "name": "dev-team",
   "description": "A portable senior development team of subagents (tech lead, UX designer, UI/backend implementers, DB engineer, QA, code reviewer, doc keeper, legacy analyst). Project-agnostic: run /dev-team:team-init once per project to generate the .devteam/PROJECT.md brief that every agent reads before working.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "hooks": "./hooks/hooks.json",
   "author": {
     "name": "Carlos Bastida",

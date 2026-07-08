@@ -9,7 +9,7 @@ Produce a compact digest of project state from the artifacts the team already le
 
 ## Gather (run the cheap commands directly; delegate to an Explore agent only if the repo is huge)
 
-1. **Brief**: read `.devteam/PROJECT.md` (if missing → suggest `/dev-team:team-init` and stop). Note its "Last updated" date and the ledger paths in its "Docs" section.
+1. **Brief**: read `.devteam/PROJECT.md` if it exists; note its "Last updated" date and the ledger paths in its "Docs" section. If missing, proceed with a git-only digest (steps 2–4, no ledgers) and suggest `/dev-team:team-init` in one line.
 2. **Recent work**: `git log --oneline --since=<brief's last-updated date>` (fallback: last 15 commits). Uncommitted changes: `git status --short`.
 3. **Pending decisions**: `git grep -n "DECISION-PENDING"` — defaults implementers took that still need a human ruling.
 4. **Deliberate debt**: `git grep -n "ponytail:"` (exclude `.devteam/` and docs) — shortcuts with stated ceilings.

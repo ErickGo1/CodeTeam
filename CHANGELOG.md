@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.1 — 2026-07-07
+
+- **No-brief mode**: agents no longer hard-stop when `.devteam/PROJECT.md` is missing. They proceed ponytail-style — infer conventions from the repo (CLAUDE.md, AGENTS.md, README, code patterns), apply universal role rules, and open their report with a "running without a project brief" notice. tech-lead marks inferred conventions as ASSUMPTIONS in plans.
+- Exceptions (still decline without a brief): `legacy-analyst` and `data-migration-engineer` — no configured legacy sources means guessing with real data.
+- Skills relaxed the same way: `team` proceeds with assumptions surfaced in the final report, `team-review` runs universal checklists only, `team-standup` degrades to a git-only digest.
+- Trade-off accepted: the brief is now optional sharpening rather than forced onboarding — projects can run indefinitely on inference; the per-report notice is the nudge.
+
 ## 0.3.0 — 2026-07-07
 
 - `product-analyst` role (15th): client requirements documents → numbered business rules (BR-x), user stories with test-derivable acceptance criteria, BR↔story traceability table, open questions for the client, explicit out-of-scope. Built now because a real client workflow needs it (was deferred in 0.2.0).

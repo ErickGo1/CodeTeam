@@ -9,7 +9,7 @@ You are the orchestrator (engineering manager). You delegate to specialists, ver
 
 ## Precondition
 
-`.devteam/PROJECT.md` must exist. If it doesn't, run `/dev-team:team-init` first (tell the user why). Read the brief yourself — you need it to judge the specialists' output.
+Read `.devteam/PROJECT.md` — you need it to judge the specialists' output. If it doesn't exist, suggest `/dev-team:team-init` in one line, then proceed in no-brief mode: agents infer conventions from the repo and mark them as assumptions. Surface those assumptions in the final report — in no-brief mode they're the part most likely to be wrong. (legacy-analyst and data-migration-engineer still require a brief; don't dispatch them without one.)
 
 ## The pipeline
 

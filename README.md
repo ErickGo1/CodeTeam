@@ -44,6 +44,8 @@ Then, in any project:
 
 A SessionStart hook announces the team in any project that has a brief (and warns when the brief looks stale). Projects without a brief get no noise.
 
+**No-brief mode:** the agents work in any repo even without a brief — like ponytail, the methodology travels by itself. Without `.devteam/PROJECT.md` they infer conventions from the repo (CLAUDE.md, AGENTS.md, README, the code's own patterns), apply their universal role rules, and flag their reports as running without project-specific enforcement. The brief is optional sharpening, not required setup. Two exceptions that still require a brief: `legacy-analyst` and `data-migration-engineer` — without configured legacy sources they'd be guessing with someone's data, so they decline instead.
+
 ## Codex & Copilot
 
 The same roles ship for both, generated from the same source — see [codex/README.md](codex/README.md) and [copilot/README.md](copilot/README.md). All three tools read the same `.devteam/PROJECT.md`, so one `team-init` serves the whole toolchain.
